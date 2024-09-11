@@ -16,7 +16,7 @@ public class Teste{
         @SuppressWarnings("unused")
         String response = sc.next();
         
-    }
+    } 
 
     public void pause() throws LineUnavailableException{
 
@@ -38,7 +38,7 @@ public class Teste{
 
     public void setClip(String nomeDoAudio) throws UnsupportedAudioFileException, IOException, LineUnavailableException{
 
-        File file = new File("./TopGear/game_sounds/" + nomeDoAudio + ".wav");
+        File file = new File("./game_sounds/" + nomeDoAudio + ".wav");
         AudioInputStream audioStream = AudioSystem.getAudioInputStream(file);
         this.clip = AudioSystem.getClip();
         this.clip.open(audioStream);
